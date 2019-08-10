@@ -30,7 +30,11 @@
       </el-col>
       <el-col :span="6" class="hotelLevel">
         <p>住宿类型</p>
+<<<<<<< HEAD
         <el-dropdown :hide-on-click="false" >
+=======
+        <el-dropdown :hide-on-click="false">
+>>>>>>> 158ad06e5dea1b460379b3e8c64584069b2e8879
           <p class="el-dropdown-link">
             <span>{{typesText||"不限"}}</span>
             <i class="el-icon-arrow-down el-icon--right"></i>
@@ -73,12 +77,19 @@
             <span>{{brandsText||"不限"}}</span>
             <i class="el-icon-arrow-down el-icon--right"></i>
           </p>
+<<<<<<< HEAD
           <el-dropdown-menu slot="dropdown" v-model="closebrands" :style="{height:'300px',overflow:'auto'}">
+=======
+          <el-dropdown-menu slot="dropdown" v-model="closebrands">
+>>>>>>> 158ad06e5dea1b460379b3e8c64584069b2e8879
             <el-dropdown-item
               v-for="(item,index) in hotelbrands"
               :key="index"
               @click.native="getbrands(item)"
+<<<<<<< HEAD
               :split-button="true"
+=======
+>>>>>>> 158ad06e5dea1b460379b3e8c64584069b2e8879
             >
               <i class="iconfont iconcircle"></i>
               {{item.name}}
