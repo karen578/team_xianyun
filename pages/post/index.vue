@@ -68,7 +68,7 @@
           <div class="title-t">
             <h3>推荐攻略</h3>
           </div>
-          <el-button type="primary" style="float: right">
+          <el-button type="primary" style="float: right" @click="postAdd">
             <i class="el-icon-edit"></i> 写游记
           </el-button>
         </div>
@@ -162,6 +162,10 @@ export default {
     };
   },
   methods: {
+    // 写游记
+    postAdd(){
+      this.$router.push('/post/create')
+    },
     //  搜索城市功能
     handContent(){
         if(this.content){
@@ -197,9 +201,9 @@ export default {
     initList() {
       // 列表攻略文章渲染
       this.$axios({
-        url: "/posts"
+        url: "http://157.122.54.189:9095/posts"
       }).then(res => {
-        // console.log(res);
+        console.log(res);
         //   文章数据获取
         this.postList = res.data.data;
         this.cacheFlightsData = { ...res.data.data };
