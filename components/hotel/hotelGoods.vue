@@ -48,7 +48,6 @@
         </el-col>
       </el-row>
     </el-col>
-<div class="hotelGoods">
   <el-col >
     <el-row type="flex" justify="space-around">
       <el-col :span="8" class="hotelPic">
