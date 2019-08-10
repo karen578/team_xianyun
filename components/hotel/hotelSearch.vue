@@ -78,6 +78,7 @@
               v-for="(item,index) in hotelbrands"
               :key="index"
               @click.native="getbrands(item)"
+              :split-button="true"
             >
               <i class="iconfont iconcircle"></i>
               {{item.name}}
