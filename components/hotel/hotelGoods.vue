@@ -48,56 +48,6 @@
         </el-col>
       </el-row>
     </el-col>
-  <el-col >
-    <el-row type="flex" justify="space-around">
-      <el-col :span="8" class="hotelPic">
-        <img
-          :src="goodslist.photos"
-          alt
-        />
-      </el-col>
-      <el-col :span="12">
-        <div class="productHotel">
-          <h4 @click="toDatail">{{goodslist.name}}</h4>
-          <p>
-            <span>{{goodslist.alias}}</span>
-            <i class="iconfont iconhuangguan"></i>
-            <i class="iconfont iconhuangguan"></i>
-            <i class="iconfont iconhuangguan"></i>
-            <span>{{goodslist.hoteltype.name}}</span>
-          </p>
-          <div class="pingjia">
-            <i class="el-rate__icon el-icon-star-on"></i>
-            <i class="el-rate__icon el-icon-star-on"></i>
-            <i class="el-rate__icon el-icon-star-on"></i>
-            <i class="el-rate__icon el-icon-star-on"></i>
-            <i class="el-rate__icon el-icon-star-on"></i>
-            <span>
-              <strong>27</strong>条评价
-            </span>
-            <span>
-              <strong>61</strong>篇游记
-            </span>
-          </div>
-          <div class="locations">
-            <i class="iconfont iconlocation" style="color:#666"></i>
-           {{goodslist.address}}
-          </div>
-        </div>
-      </el-col>
-      <el-col :span="6">
-        <div class="otherTrips" v-for="(item,index) in goodslist.products" :key="index">
-          <a href="javasprict:;">
-              <el-row type="flex" justify="space-around">
-              <span>{{item.name}}</span>
-              <span><strong>￥{{item.price}}</strong>起 &gt;</span>
-              </el-row>
-          </a>
-          
-        </div>
-      </el-col>
-    </el-row>
-  </el-col>
   </div>
 </template>
 <script>
