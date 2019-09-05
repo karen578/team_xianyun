@@ -74,7 +74,7 @@
     <!-- 酒店筛选 -->
     <HotelSearch @getPriceList="getPriceList"/>
     <!-- 酒店产品页面 -->
-    <HotelGoods v-for="(item,index) in goodsForm" :key="index" :goodslist="item" />
+    <HotelGoods v-for="(item,index) in goodsForm" :key="index" :goodslist="item"/>
     <!-- 分页 -->
     <HotelPage :dataForm="dataForm" @getPages="getPages" />
   </div>
