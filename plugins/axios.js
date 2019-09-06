@@ -1,6 +1,6 @@
 import {Message} from "element-ui";
 
-// axios拦截插件,处理错误返回
+// axios拦截插件,驱蚊器处理错误返回
 
 // 每个nuxt的插件都会暴露出一个函数
 // 插件的第一个参数是默认的nuxt对象
